@@ -84,10 +84,6 @@ namespace LittleHumanizer
                 _lastCommandT.Add("spellcast" + spellslot, 0);
             }
             Loading.OnLoadingComplete += Game_OnGameLoad;
-            Drawing.OnDraw += onDrawArgs =>
-            {
-                Drawing.DrawText(Drawing.Width - 190, 100, System.Drawing.Color.Lime, "Blocked : " + BlockedCount + " Clicks");
-            };
             Spellbook.OnCastSpell += Spellbook_OnCastSpell;
 
         }
